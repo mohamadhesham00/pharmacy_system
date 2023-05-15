@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="808.0" prefWidth="820.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pro.ViewBillsController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="816.0" prefWidth="222.0" style="-fx-background-color: #273746;">
+         <children>
+            <Button fx:id="view_bdata" layoutX="41.0" layoutY="408.0" mnemonicParsing="false" onAction="#ViewBDataAction" prefHeight="50.0" prefWidth="141.0" text="view all data">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="backbtn" layoutX="134.0" layoutY="741.0" mnemonicParsing="false" onAction="#backaction" text="back">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="45.0" layoutY="120.0" prefHeight="64.0" prefWidth="147.0" text="view bills" textFill="#fffefe">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_bills" layoutX="222.0" layoutY="27.0" prefHeight="788.0" prefWidth="598.0">
+        <columns>
+          <TableColumn fx:id="co_id" prefWidth="68.0" text="id" />
+          <TableColumn fx:id="co_name" prefWidth="120.0" text="customer name" />
+            <TableColumn fx:id="co_number" prefWidth="134.0" text="customer number" />
+            <TableColumn fx:id="co_date" prefWidth="58.0" text="date" />
+            <TableColumn fx:id="co_medicineid" prefWidth="93.0" text="medicine id" />
+            <TableColumn fx:id="co_amount" prefWidth="65.0" text="amount" />
+            <TableColumn fx:id="co_price" prefWidth="59.0" text="price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

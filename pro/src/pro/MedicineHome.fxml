@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.MedicineHomeController">
+   <children>
+      <AnchorPane prefHeight="746.0" prefWidth="242.0" style="-fx-background-color: #273746;">
+         <children>
+            <Button fx:id="addbtn" layoutX="25.0" layoutY="469.0" mnemonicParsing="false" onAction="#addaction" prefHeight="31.0" prefWidth="159.0" text="ADD">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="update" layoutX="23.0" layoutY="527.0" mnemonicParsing="false" onAction="#updateaction" prefHeight="31.0" prefWidth="159.0" text="UPDATE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletebtn" layoutX="25.0" layoutY="586.0" mnemonicParsing="false" onAction="#deleteaction" prefHeight="31.0" prefWidth="159.0" text="DELETE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="id_txt" layoutX="23.0" layoutY="42.0" promptText="ID" />
+            <TextField fx:id="company_txt" layoutX="23.0" layoutY="150.0" promptText="COMPANY" />
+            <TextField fx:id="arrival_txt" layoutX="22.0" layoutY="199.0" prefHeight="31.0" prefWidth="193.0" promptText="ARRIVAL DATE" />
+            <TextField fx:id="expire_txt" layoutX="23.0" layoutY="246.0" promptText="EXPIRED DATE" />
+            <TextField fx:id="name_txt" layoutX="23.0" layoutY="100.0" promptText="NAME" />
+            <TextField fx:id="price_txt" layoutX="23.0" layoutY="286.0" promptText="PRICE" />
+            <TextField fx:id="quantity_txt" layoutX="25.0" layoutY="334.0" promptText="QUANTITY" />
+            <Button fx:id="backbtn" layoutX="138.0" layoutY="672.0" mnemonicParsing="false" onAction="#backaction" prefHeight="33.0" prefWidth="90.0" text="Back">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="v_btn" layoutX="22.0" layoutY="407.0" mnemonicParsing="false" onAction="#v_btn" prefHeight="31.0" prefWidth="159.0" text="view all data">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="clearbtn" layoutX="23.0" layoutY="673.0" mnemonicParsing="false" onAction="#clear" prefHeight="31.0" prefWidth="75.0" text="clear">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_medicine" layoutX="242.0" layoutY="16.0" onMouseClicked="#get_selected" prefHeight="715.0" prefWidth="609.0">
+        <columns>
+          <TableColumn fx:id="co_id" prefWidth="66.0" text="ID" />
+          <TableColumn fx:id="co_name" text="NAME" />
+            <TableColumn fx:id="co_company" prefWidth="84.0" text="COMPANY" />
+            <TableColumn fx:id="co_arrival" prefWidth="114.0" text="ARRIVAL DATE" />
+            <TableColumn fx:id="co_expire" prefWidth="112.0" text="EXPIRED DATE" />
+            <TableColumn fx:id="co_price" prefWidth="51.0" text="PRICE" />
+            <TableColumn fx:id="co_quantity" prefWidth="94.0" text="QUANTITIY" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

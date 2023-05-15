@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.HomeController">
+   <children>
+      <AnchorPane prefHeight="746.0" prefWidth="242.0" style="-fx-background-color: #273746;">
+         <children>
+            <Label layoutX="40.0" layoutY="128.0" prefHeight="54.0" prefWidth="137.0" text="Home" textFill="#fcfcfc">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="medhome" layoutX="40.0" layoutY="328.0" mnemonicParsing="false" onAction="#medaction" prefHeight="31.0" prefWidth="137.0" text="medicine">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutbtn" layoutX="35.0" layoutY="666.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="144.0" text="logout">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewbills" layoutX="40.0" layoutY="439.0" mnemonicParsing="false" onAction="#VIewBillsAction" prefHeight="39.0" prefWidth="144.0" text="view bills">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_medicines" layoutX="242.0" layoutY="257.0" prefHeight="489.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="co_id" prefWidth="98.0" text="id" />
+          <TableColumn fx:id="co_name" prefWidth="109.0" text="name" />
+            <TableColumn fx:id="co_company" prefWidth="86.0" text="company" />
+            <TableColumn fx:id="co_arrival" prefWidth="99.0" text="arrival date" />
+            <TableColumn fx:id="co_expire" prefWidth="89.0" text="expire date" />
+            <TableColumn fx:id="co_price" prefWidth="58.0" text="price" />
+            <TableColumn fx:id="co_quantity" prefWidth="66.0" text="quantity" />
+        </columns>
+      </TableView>
+      <Label layoutX="258.0" layoutY="87.0" prefHeight="48.0" prefWidth="171.0" text="enter medicine id : ">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hidtxt" layoutX="424.0" layoutY="96.0" onAction="#searchaction" prefHeight="31.0" prefWidth="203.0" />
+      <Button fx:id="searchbtn" layoutX="653.0" layoutY="96.0" mnemonicParsing="false" onAction="#searchaction" style="-fx-background-color: #273746;" text="search" textFill="#f8efef" />
+      <Button fx:id="viewbtn" layoutX="731.0" layoutY="96.0" mnemonicParsing="false" onAction="#viewaction" style="-fx-background-color: #273746;" text="view all data" textFill="#eee9e9" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="525.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pro.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="419.0" prefWidth="157.0" style="-fx-background-color: #273746;" />
+      <Label layoutX="263.0" layoutY="47.0" prefHeight="45.0" prefWidth="97.0" text="login" textFill="#273746">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="189.0" prefHeight="21.0" prefWidth="82.0" text="username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="249.0" prefHeight="21.0" prefWidth="82.0" text="password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usertf" layoutX="275.0" layoutY="187.0" />
+      <PasswordField fx:id="passtf" layoutX="275.0" layoutY="247.0" />
+      <Button fx:id="logbtn" layoutX="386.0" layoutY="333.0" mnemonicParsing="false" onAction="#loginaction" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #273746;" text="login" textFill="#e8ebee" />
+   </children>
+</AnchorPane>
